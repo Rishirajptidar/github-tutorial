@@ -1,0 +1,29 @@
+GIT :    virsion control system tool
+         we can track changes made in the code.
+         go back to see older version
+         we can work in team without messing up each other's work.
+Github : platform where we host our git repositories.
+         store and share git repo or our projects.
+         we can collaborate with other, track issues, review code, etc
+Repository : just a project folder.
+             contains code, documentaion and history of changes.
+             can be shared locally or remotely.
+
+
+---------------------------------------------------------------------------------------------
+
+
+Flow :
+
+working directory --->>> staging Area[Snapshot] --->>> Repository
+(normal folder)            (git add .)          (git commit -m "message")
+
+---------------------------------------------------------------------------------------------
+File States : 
+
+U : Untracked : files only in working directory.
+M : Modified : ek commited file ko agr modify kiya he or uske bad commit nahi kiya.
+Staged : staged but not commited.
+Commited : commit the staged.
+
+---------------------------------------------------------------------------------------------

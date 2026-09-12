@@ -9,9 +9,7 @@ Repository : just a project folder.
              contains code, documentaion and history of changes.
              can be shared locally or remotely.
 
-
 ---------------------------------------------------------------------------------------------
-
 
 Flow :
 
@@ -19,11 +17,26 @@ working directory --->>> staging Area[Snapshot] --->>> Repository
 (normal folder)            (git add .)          (git commit -m "message")
 
 ---------------------------------------------------------------------------------------------
+
 File States : 
 
 U : Untracked : files only in working directory.
 M : Modified : ek commited file ko agr modify kiya he or uske bad commit nahi kiya.
-Staged : staged but not commited.
-Commited : commit the staged.
+Staged : staged in a single unit but not commited.
+Commited : commit the staged unit.
 
 ---------------------------------------------------------------------------------------------
+
+Logs : They store the whole process and allows you the time travel,
+       They store the commit id, Author who commited and the date and time.
+       git log : to get the detailed log report.
+       git log --oneline : to get the short one line commit info only
+
+---------------------------------------------------------------------------------------------
+
+Git Ignore : when we want that some files should not be tracked by the git.
+             They should not be staged, they should not be commited.
+             we have things like env variables .env file, api secrates and we dont want to track it or push it publically so we use git Ignore
+
+
+             Create a folder .git_ignore.txt and write name of all the files or folders that we dont want to track

@@ -11,6 +11,15 @@ Repository : just a project folder.
 
 ---------------------------------------------------------------------------------------------
 
+Special Points :
+    * Git do not track empty folders.
+      If we want git to track empty folders as well then we have to create a new file .gitkeep.
+      this will be hidden and the folder will be tracked, it is used when we strictly want to
+      preserve the core structure even with empty folders otherwise git will iignore those empty folders.
+      we have head that points to the latest commit by default
+      
+---------------------------------------------------------------------------------------------
+
 Flow :
 
 working directory --->>> staging Area[Snapshot] --->>> Repository
@@ -36,7 +45,29 @@ Logs : They store the whole process and allows you the time travel,
 
 Git Ignore : when we want that some files should not be tracked by the git.
              They should not be staged, they should not be commited.
-             we have things like env variables .env file, api secrates and we dont want to track it or push it publically so we use git Ignore
+             we have things like env variables .env file, api secrates and we dont want to 
+             track it or push it publically so we use git Ignore
+
+             Create a folder .gitignore and write name of all the files or folders that we dont want to track,
+             git will simply ignore them.
+
+             git do not tracks the empty folders, but if you want any folder to be tracked just to maintain the
+             structere of the code the we can add a simple .gitkeep file in it and now this folder will be tracked.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Branches and merges : in real world multiple people work on the same project, so they creat their own branch from the master branch.
+           They do their task in that branch, and whenn complited they merge it with the main branch 
+
+           the commit from which the branch is created it is called ancestor and it automatically inherit the before commits.
+           the commit where the branch merge in the master branch is called merge commit.
+
+           git branch : this is the command to list all the Branches.
+           git switch branchname : this is the command to switch to any branch and create new branch.
+           git switch -c new_branch_name : 
+           
 
 
-             Create a folder .git_ignore.txt and write name of all the files or folders that we dont want to track
+-----------------------------------------------------------------------------------------------------------------------
+
+

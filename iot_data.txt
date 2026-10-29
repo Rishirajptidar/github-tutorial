@@ -5,3 +5,7 @@ new data ingested
 this file is now being modified by feature_rishi2
 
 this is fixed be master branch
+this is fixed by bugfix.
+
+
+we have fixed this using merge editor 

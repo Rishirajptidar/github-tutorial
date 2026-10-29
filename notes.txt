@@ -63,11 +63,18 @@ Branches and merges : in real world multiple people work on the same project, so
            the commit where the branch merge in the master branch is called merge commit.
 
            git branch : this is the command to list all the Branches.
+           Branching: Allows for parallel development. New branches are created from the HEAD (the latest commit of the current branch).
            git switch branchname : this is the command to switch to any branch and create new branch.
-           git switch -c new_branch_name : 
+           git switch -c new_branch_name :
+
+           git merge branchname -m "message" : this is used to merge files in the master branch. 
+           Merge Commits: Creating a merge commit is standard practice to finalize the integration of a feature branch into the master branch.
            
 
 
 -----------------------------------------------------------------------------------------------------------------------
 
-
+merge conflicts : this occurs when two branches modify same file or same line of code and merged to the master branch. now git is confused between which commit to give the piority
+                  Cause      : Conflicts occur when Git cannot automatically reconcile differences between two branches (e.g., both branches modified the same line).
+                  Resolution : You must manually edit the conflicting file to remove the conflict markers (e.g., <<<<, ====, >>>>) and choose the desired code version before committing the resolution.
+                  resolve confilt : either we can acept the incoming changes or we can accepth the current changes or acept both or compare apart from this we can create our own virsion also
